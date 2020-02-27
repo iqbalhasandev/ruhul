@@ -444,9 +444,7 @@ a:focus, a:hover {
     background-position: -31%;
     height: 100vh;
     color: #fff;
-    /*! background-position: center; */
-    background-size: 79%;
-}
+} 
  
 .header-area:before {
     background-color: rgba(0, 0, 0, .61)
