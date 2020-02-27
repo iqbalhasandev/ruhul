@@ -1,0 +1,72 @@
+  /* [11.1 Skill Area] */
+  
+  .skill_list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 -15px -45px;
+  }
+  
+  .skill_list>div {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(50% - 30px);
+      flex: 1 1 calc(50% - 30px);
+      margin: 0 15px;
+  }
+  
+  .single_skill {
+      padding-bottom: 25px;
+  }
+  
+  .single_skill h3 {
+      color: #232323;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0 0 12px;
+      position: relative;
+      text-transform: capitalize;
+  }
+  
+  .single_skill:last-child {
+      padding-bottom: 0;
+  }
+  
+  .single_skill .progress_bar {
+      background: #ccc none repeat scroll 0 0;
+      box-shadow: 0 0 0;
+      height: 3px;
+      margin: 0 0 20px;
+      position: relative;
+      width: 100%;
+  }
+  
+  .single_skill .progress_bar>span {
+      background: #1EBBA3 none repeat scroll 0 0;
+      display: block;
+      height: 100%;
+      width: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  .single_skill .progress_bar>span>strong {
+      color: #232323;
+      font-weight: normal;
+      font-size: 14px;
+      position: absolute;
+      right: -15px;
+      top: -31px;
+  }
+  
+  .single_skill .progress_bar>span>strong:before {
+      border-color: #1ebba3 transparent transparent;
+      border-style: solid;
+      border-width: 7px 5px;
+      bottom: -12px;
+      content: "";
+      left: 4px;
+      position: absolute;
+  }

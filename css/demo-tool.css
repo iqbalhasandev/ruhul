@@ -1,0 +1,91 @@
+.demo-tool {
+	display: none;
+}
+.tool-wrapper {
+	position: fixed;
+	left: 0;
+	top: 25%;
+	z-index: 999;
+	-webkit-transform: translate(-200px, 0);
+	        transform: translate(-200px, 0);
+	transition: all .4s ease-in-out;
+}
+
+.demo-tool.show .tool-wrapper {
+	-webkit-transform: translate(0, 0);
+	        transform: translate(0, 0);
+}
+
+.tool-wrapper, .demo-tool .tool-toggler {
+	box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.demo-tool .tool-toggler {
+	position: absolute;
+	width: 37px;
+	height: 37px;
+	background-color: #fff;
+	display: block;
+	cursor: pointer;
+	left: 100%;
+	top: 6%;
+}
+
+.demo-tool .tool-toggler i {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	font-size: 20px;
+}
+
+.demo-tool .tool-toggler i:before {
+	-webkit-animation: spin 2.7s infinite linear;
+	        animation: spin 2.7s infinite linear;
+}
+
+.demo-tool .tool-box {
+	width: 200px;
+	padding: 20px 16px;
+	background-color: #fff;
+}
+
+.demo-tool .tool-box .title {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+}
+
+.demo-tool .tool-box .color-switcher {
+	line-height: 100%;
+}
+
+.demo-tool .tool-box .color-switcher .list-inline-item {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 3px 1px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
